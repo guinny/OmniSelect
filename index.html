@@ -78,7 +78,7 @@ jQuery(function($) {
 The following demo is decorated using
 <a href="http://harvesthq.github.io/chosen/">Chosen</a> and
 <a href="http://twitter.github.io/bootstrap/">Bootstrap</a>.
-It however a stand-alone plugin and can be run without any
+It is however a stand-alone plugin without any
 further dependencies other than
 <a href="http://jquery.com/">JQuery</a>.
 </p>
@@ -139,8 +139,8 @@ to implement a search tool:
 </div>
 
 <p>
-The plugin also provides a built-in (de-)serialization functionality. 
-Click the following button below to generate a link that can restore the 
+The plugin also provides a built-in (de-)serialization functionality.
+Click the following button below to generate a link that can restore the
 filters above, you can copy/paste it into another browser tab:
 </p>
 
@@ -151,9 +151,10 @@ filters above, you can copy/paste it into another browser tab:
 
 <h3>Basic Usage</h3>
 
-<p>As for now, the only way to define the structure of the selectors 
-is through HTML, and initialize a OmniSelect object using Javascript.
-The HTML part should take the following template:</p>
+<p>
+The structure of an OmniSelect object is defined using HTML:
+</p>
+
 
 <pre><code>&lt;div id="omniselect"&gt;
   &lt;div&gt;
@@ -170,8 +171,7 @@ The HTML part should take the following template:</p>
 &lt;/div&gt;</code></pre>
 
 <p>
-Below shows the basic way to initialize a OmniSelect object. There are more 
-parameters that can be manually set. Please consult the example above.
+We then initialize it in Javascript pointing to that HTML element:
 </p>
 
 <pre><code>var omni = new OmniSelect({
@@ -180,10 +180,13 @@ parameters that can be manually set. Please consult the example above.
 omni.init();
 </code></pre>
 
+The created OmniSelect object has a root select element with labels as choice.
+Upon selecting one option, that option's widget appears behind the root element.
+
 <h3>Support or Contact</h3>
 
-<p>In case you are having troubles using the code, or you have found a bug, or you 
-wish to enhance the functionalities, please contact 
+<p>In case you are having troubles using the code, or you have found a bug, or you
+wish to enhance the functionalities, please contact
 <a href="https://github.com/guinny" class='user-mention'>@guinny</a>.</p>
 
     <!-- FOOTER  -->
