@@ -43,6 +43,7 @@
           text: @_options.removeFilterLabel
           class: 'remove-filter-link'
           href: '#'
+          onClick: 'return false;'
       })
 
       # Initialize the AddFilter button.
@@ -50,6 +51,7 @@
           text: @_options.addFilterLabel
           class: 'add-filter-link'
           href: '#'
+          onClick: 'return false;'
       })
       addFilterLink.click (event) => @_addFilter()
       $(@_options.collection).append addFilterLink

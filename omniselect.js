@@ -35,12 +35,14 @@
         this._removeFilterLink = $('<a>', {
           text: this._options.removeFilterLabel,
           "class": 'remove-filter-link',
-          href: '#'
+          href: '#',
+          onClick: 'return false;'
         });
         addFilterLink = $('<a>', {
           text: this._options.addFilterLabel,
           "class": 'add-filter-link',
-          href: '#'
+          href: '#',
+          onClick: 'return false;'
         });
         addFilterLink.click(function(event) {
           return _this._addFilter();
