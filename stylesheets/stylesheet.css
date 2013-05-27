@@ -113,7 +113,7 @@ a {
   color: #007edf;
   text-shadow: none;
 
-  transition: color 0.5s ease;
+/*  transition: color 0.5s ease;
   transition: text-shadow 0.5s ease;
   -webkit-transition: color 0.5s ease;
   -webkit-transition: text-shadow 0.5s ease;
@@ -123,11 +123,12 @@ a {
   -o-transition: text-shadow 0.5s ease;
   -ms-transition: color 0.5s ease;
   -ms-transition: text-shadow 0.5s ease;
+*/
 }
 
 #main_content a:hover {
-  color: #0069ba;
-  text-shadow: #0090ff 0px 0px 2px;
+  /*color: #0069ba;*/
+  /*text-shadow: #0090ff 0px 0px 2px;*/
 }
 
 footer a:hover {
@@ -429,3 +430,38 @@ Small Device Styles
   }
 
 }
+
+.omniselect {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.omniselect > div{
+  margin-bottom: 10px;
+}
+
+.omniselect > div > *{
+  margin-right: 10px;
+}
+
+.omniselect> div > div{
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.reset {
+  margin-bottom: 20px;
+}
+
+.inline-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.inline-field {
+  margin: 0px !important;
+}
+
+
+
